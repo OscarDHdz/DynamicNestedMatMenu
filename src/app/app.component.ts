@@ -7,4 +7,43 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-app';
+
+
+  guiMenu = [
+    {
+      title: '1'
+    },
+    {
+      title: '2 =>',
+      children: [
+        {
+          title: '1'
+        }
+      ]
+    },
+    {
+      title: '3 =>',
+      children: [
+        {
+          title: '2 =>',
+          children: [
+            {
+              title: '1'
+            },
+            {
+              title: '1'
+            }
+          ]
+        },
+        {
+          title: '1'
+        }
+      ]
+    },
+  ];
+
+
+
+
+
 }
